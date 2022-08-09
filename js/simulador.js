@@ -22,31 +22,38 @@ function sumaEdades(edadEmpleado1, edadEmpleado2, edadEmpleado3, edadEmpleado4) 
 
 }
 
-let resultadoEdad = sumaEdades(edadEmpleado1, edadEmpleado2, edadEmpleado3, edadEmpleado4);
+let resultadoEdad = sumaEdades(edadEmpleado1, edadEmpleado2, edadEmpleado3, edadEmpleado4)
 
 let promedioEdad = resultadoEdad / cantidadEmpleados
-alert("El promedio de edad del equipo de trabajo es " + promedioEdad);
+alert("El promedio de edad del equipo de trabajo es " + promedioEdad)
+
+
+let zonaTrabajo = parseInt(prompt("¿En que parte de la empresa trabaja? (Ingrese solamente el numero correspondiente):1-Diseño, 2-Estructura, 3-Servidores, 4-Seguridad Web."))
 
 switch (zonaTrabajo) {
-    case 1: 
-    let nombreTrabajo = parseInt(prompt("¿En que parte de la empresa trabaja? (Ingrese solamente el numero correspondiente):1-Diseño, 2-Estructura,3-Servidores,4-Seguridad Web."))
-    if (zonaTrabajo === 1){
+    case 1:
         alert("El numero ingresado corresponde al departamento de diseñadores")
-    }
-    else if (zonaTrabajo === 2) {
-        alert("El numero ingresado corresponde al departamento de estructura")
+        break
 
-    }
-    else if (zonaTrabajo === 3) {
+    case 2:
+        alert("El numero ingresado corresponde al departamento de estructura")
+        break
+
+    case 3:
         alert("El numero ingresado corresponde al departamento de servidores")
-    }
-    else if(zonaTrabajo === 4) {
+        break
+
+    case 4:
         alert("El numero ingresado corresponde al departamento de seguridad web")
-    }
-    break
+        break
+
+    default:
+        alert("error ingrese un numero del 1 - 4")
+        break;
 
 }
-let clasificacionEquipo = promedioEdad;
+
+let clasificacionEquipo = promedioEdad
 
 if (clasificacionEquipo >= 35) {
     alert("Es un equipo de trabajo senior");
@@ -54,6 +61,8 @@ if (clasificacionEquipo >= 35) {
 
 else {
     alert("Es un equipo de trabajo junior");
+
 }
+
 
 
