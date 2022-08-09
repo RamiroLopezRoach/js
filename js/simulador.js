@@ -1,5 +1,3 @@
-debugger
-
 confirm("Aceptar para iniciar el calculo");
 
 let edadEmpleado1 = parseInt(prompt("Ingresar edad del trabajador"));
@@ -63,6 +61,8 @@ else {
     alert("Es un equipo de trabajo junior");
 
 }
+
+
 
 
 
